@@ -15,3 +15,10 @@ body {
     overflow-x: hidden;
     margin: 0 0;
 }
+.bgHeader{
+    background: linear-gradient(linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
