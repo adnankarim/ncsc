@@ -1,18 +1,20 @@
-import React from "react"
-import '../style.css'
-import '../grid.css'
-import StyledHeader from '../components/StyledHeader/StyledHeader'
+import React from 'react';
 
+import Layout from '../components/layout/layout';
 
-export default () => (
+// Sections
+import Home from '../sections/home';
+import About from '../sections/about';
+import Portfolio from '../sections/portfolio';
+import Contact from '../sections/contact';
 
-    <StyledHeader>
-         
-    </StyledHeader>
+const IndexPage = () => (
+  <Layout>
+    <Home />
+    <Portfolio />
+    <About />
+    <Contact />
+  </Layout>
+);
 
-
-    
-    
-    
-    
-    );
+export default IndexPage;
