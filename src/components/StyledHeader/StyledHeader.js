@@ -5,7 +5,7 @@ import $ from 'jquery'
 
 class StyledHeader extends React.Component {
 
-//background image reel
+//background image reel changes after
   componentDidMount() {
     var body = document.querySelector('#home');
 body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),   url(/3.jpg)";
@@ -63,5 +63,5 @@ function randomGen(){
   }
 }
 
-
+//exporting
 export default StyledHeader;
