@@ -183,7 +183,11 @@ const Span = styled.span`
   }
 `;
 
+<<<<<<< HEAD
 const darkModeToggle = ({ mobile }) => {
+=======
+const DarkModeToggle = ({ mobile }) => {
+>>>>>>> Team Section  Added
   const darkMode = useDarkMode(false);
   //Animation
   const darkModeToggleSpring = useSpring({
@@ -197,6 +201,10 @@ const darkModeToggle = ({ mobile }) => {
         type="checkbox"
         id="dn"
         checked={darkMode.value}
+<<<<<<< HEAD
+=======
+
+>>>>>>> Team Section  Added
         onChange={darkMode.toggle}
       />
       <Label htmlFor="dn" className="toggle">
@@ -216,4 +224,8 @@ const darkModeToggle = ({ mobile }) => {
   );
 };
 
+<<<<<<< HEAD
 export default darkModeToggle;
+=======
+export default DarkModeToggle;
+>>>>>>> Team Section  Added

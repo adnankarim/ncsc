@@ -1,0 +1,111 @@
+
+.team-section{
+    text-align: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+  .inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px;
+    color: #333;
+    overflow: hidden;
+  }
+
+  .pe{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .pe:hover{
+    background: #ddd;
+  }
+  .pe img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  /* dark pe */
+  .d-pe{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .d-pe:hover{
+    background: #202020;
+  }
+  .d-pe img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  /* President Case */
+  .peptalk{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 0px ;
+    transition: 0.4s;
+  }
+  .peptalk:hover{
+    background: #ddd;
+  }
+  .peptalk img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  /* dark President Case */
+  .d-peptalk{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 0px ;
+    transition: 0.4s;
+  }
+  .d-peptalk:hover{
+    background: #202020;
+  }
+  .d-peptalk img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .p-name{
+    font-size: 14px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  /*dark  */
+  .d-name{
+    color: #dadada;
+    font-size: 14px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .p-des{
+    font-size: 12px;
+    color: #3498db;
+    font-weight: 400;
+  }
+  
+  @media screen and (max-width:600px) {
+    .pe{
+      width: 100%;
+    }
+    .peptalk{
+      width: 100%;
+    }
+  }
+  
