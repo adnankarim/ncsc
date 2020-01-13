@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Timeline from './Timeline/Timeline';
 import Heading from '../components/UI/heading';
+import useDarkMode from 'use-dark-mode';
+
 import {
   Contained,
   StyledSection,
@@ -17,7 +19,8 @@ const PortfolioWrapper = styled.div`
 `;
 
 const Event = () => {
-  
+  const {value:darkMode} = useDarkMode(false);
+
 
   return (
     <StyledSection id="events">
@@ -28,7 +31,10 @@ const Event = () => {
             subtitle={`Check <span>what</span> We've been doing <span>lately</span>`}
           />
           <PortfolioWrapper>
-           
+              <Timeline
+               darkMode={darkMode}
+
+              />
           </PortfolioWrapper>
         </Wrapper>
       </Contained>

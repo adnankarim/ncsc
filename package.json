@@ -8,7 +8,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
-    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/free-regular-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "add": "^2.0.6",
     "babel-plugin-styled-components": "^1.10.0",
@@ -36,6 +37,7 @@
     "react-helmet": "^5.2.1",
     "react-scroll": "^1.7.11",
     "react-spring": "^8.0.20",
+    "react-vertical-timeline-component": "^2.5.0",
     "rehype-react": "^3.1.0",
     "styled-components": "^4.2.0",
     "use-dark-mode": "^2.3.1"
