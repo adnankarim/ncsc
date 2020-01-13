@@ -18,15 +18,6 @@ const Wrapper = styled.div`
   color: var(--text);
   transition: color 0.2s ease-out, background 0.2s ease-out;
 `;
-const HeaderWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  background: var(--background);
-  color: '#dadada';
-  transition: color 0.2s ease-out, background 0.2s ease-out;
-`;
 
 const StyledMain = styled.main`
   display: flex;
@@ -34,7 +25,6 @@ const StyledMain = styled.main`
   flex: 1;
   background-color:'red';
 `;
-
 const Layout = ({ notOnePageSection, children }) => {
   // FIX FOR VH ON MOBILE
   const changeVhVariable = () => {

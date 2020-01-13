@@ -34,7 +34,7 @@
     width: calc(100% / 3);
     overflow: hidden;
     padding: 40px 0;
-    transition: 0.4s;
+  
   }
   .d-pe:hover{
     background: #202020;
@@ -107,5 +107,14 @@
     .peptalk{
       width: 100%;
     }
+    .d-pe{
+      width: 100%;
+    }
+    .d-peptalk{
+      width: 100%;
+    }
   }
-  
+  .animated{
+
+    width:100%;
+  }

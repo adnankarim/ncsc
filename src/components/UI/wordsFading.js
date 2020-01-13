@@ -40,11 +40,7 @@ const Wrapper = styled.div`
   }
 `;
 
-<<<<<<< HEAD
-const wordsFading = () => {
-=======
 const WordsFading = () => {
->>>>>>> Team Section  Added
   // Subtitle keywords loop
   const [index, setIndex] = useState(0);
   const wordsTransition = useTransition(WORDS[index], span => span.id, {
@@ -88,8 +84,4 @@ const WordsFading = () => {
   );
 };
 
-<<<<<<< HEAD
-export default wordsFading;
-=======
 export default WordsFading;
->>>>>>> Team Section  Added
