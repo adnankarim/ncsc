@@ -11,7 +11,7 @@ import {
 import ScrollDown from '../components/UI/scrollDown';
 import Button from '../components/UI/button';
 import WordsFading from '../components/UI/wordsFading';
-
+import '../sections/Timeline/Timeline.css';
 const SmallWrapper = styled.div`
   width: 90%;
   margin: 0 auto;

@@ -18,7 +18,7 @@ const PortfolioWrapper = styled.div`
   }
 `;
 
-const Event = () => {
+const Event = (props) => {
   const {value:darkMode} = useDarkMode(false);
 
 
@@ -27,14 +27,18 @@ const Event = () => {
       <Contained>
         <Wrapper>
           <Heading
-            title="Events"
-            subtitle={`Check <span>what</span> We've been doing <span>lately</span>`}
+            mode={props.mode}
+            title={props.title}
+            subtitle={props.subtitle}
           />
           <PortfolioWrapper>
-              <Timeline
+         {  props.mode==='timeline'?
+             ( <Timeline
                darkMode={darkMode}
 
               />
+              ):
+              ( <props.Element></props.Element>)}
           </PortfolioWrapper>
         </Wrapper>
       </Contained>
