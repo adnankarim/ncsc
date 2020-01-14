@@ -21,7 +21,6 @@ const IndexPage = () => (
     <Event  mode="timeline" title="Events" title/>
     <About />
     <Contact />
- <Event Element={Gallery} title="Events" subtitle={`Check <span>what</span> We've been doing <span>lately</span>`} mode="events"/>
   </Layout>
 );
 

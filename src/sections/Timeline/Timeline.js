@@ -31,7 +31,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 export default class Timeline extends Component {
-  
   render() {
     return (
       <div>
@@ -41,7 +40,6 @@ export default class Timeline extends Component {
             className='vertical-timeline-element--work'
             date='Nov 9, 2019'
             iconStyle={{ background: "#FFCF96", color: Color }}
-            
             icon={<StyledIcon icon={faRedhat} />}
           >
             <h1 className='vertical-timeline-element-title'>ETHHACKING</h1>
