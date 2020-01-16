@@ -85,7 +85,7 @@ const CustomSpan = styled.span`
 const StackTitle = styled.h2`
   font-weight: 600;
   color: var(--text-highlight);
-  margin-top: 5rem;
+  margin-top: 0rem;
   font-size: 2rem;
   transition: color 0.2s ease-out;
 

@@ -41,7 +41,7 @@ export const StyledSection = styled.section`
 
 export const Wrapper = styled.div`
   padding: 6rem 0rem;
-  margin-top: 7rem;
+  margin-top: 0;
   color: var(--text);
   display: flex;
   width: 100%;

@@ -25,7 +25,7 @@ const StyledMain = styled.main`
   flex: 1;
   background-color:'red';
 `;
-const Layout = ({ notOnePageSection, children }) => {
+const Layout = ({ notOnePageSection, children,mode }) => {
   // FIX FOR VH ON MOBILE
   const changeVhVariable = () => {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -46,7 +46,12 @@ const Layout = ({ notOnePageSection, children }) => {
     <ThemeProvider theme={theme}>
       <Wrapper>
         <SEO />
+         {mode==='gallery'?
+        <Navbar mode={mode} />
+        :
         <Navbar notOnePageSection={notOnePageSection} />
+
+        }
         <StyledMain>{children}</StyledMain>
         <GlobalStyles />
       </Wrapper>

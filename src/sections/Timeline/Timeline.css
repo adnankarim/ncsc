@@ -2,3 +2,14 @@
    background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),   url(/3.jpg);
 
 }
+.gbdiv{
+   margin:4% 0%;
+   transform: scale(.6);
+}
+.close-btn{
+
+   margin: 25px 45% 0px 45%;
+   min-width: 10%;
+   transform: scale(0.6);
+
+}

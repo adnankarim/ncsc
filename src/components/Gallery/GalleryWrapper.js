@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import Layout from "../Layout/Layout";
 import Event from "../../sections/event";
 import Gallery from "./Gallery";
-class Gallery extends Component {
+class GalleryWrapper extends Component {
   render() {
     return (
+     
       <Event
-        mode='events'
+        mode={this.props.mode}
         title={this.props.title}
         subtitle={this.props.subtitle}
-        Element={Gallery}y'
+        Element={Gallery}
       />
     );
   }
 }
 
-export default Gallery;
+export default GalleryWrapper;

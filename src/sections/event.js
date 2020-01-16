@@ -1,14 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from 'styled-components';
 import Timeline from './Timeline/Timeline';
 import Heading from '../components/UI/heading';
 import useDarkMode from 'use-dark-mode';
-
+import Button from '../components/UI/button';
 import {
   Contained,
   StyledSection,
   Wrapper,
 } from '../components/layout/elements';
+
+
 
 const PortfolioWrapper = styled.div`
   width: 100%;
@@ -24,6 +26,7 @@ const Event = (props) => {
 
   return (
     <StyledSection id="events">
+      {console.log(props.displayGallery)}
       <Contained>
         <Wrapper>
           <Heading
@@ -35,10 +38,15 @@ const Event = (props) => {
          {  props.mode==='timeline'?
              ( <Timeline
                darkMode={darkMode}
+              displayGallery={props.displayGallery}
+              handleChange={props.handleChange}
 
               />
               ):
-              ( <props.Element></props.Element>)}
+              (<>
+                <props.Element></props.Element>
+               </> 
+                )}
           </PortfolioWrapper>
         </Wrapper>
       </Contained>
