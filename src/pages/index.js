@@ -25,7 +25,6 @@ function scrollTo(e) {
 
 
 
-
 const IndexPage = () => {
   const [displayGallery, setDisplayGallery] = useState('none');
   const handleGalleryChange =(e)=>{

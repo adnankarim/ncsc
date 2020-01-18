@@ -1,8 +1,8 @@
 {
-  "name": "adnan-portfolio-gatsby",
+  "name": "NCSC",
   "private": true,
-  "description": "Adnan Karim portfolio",
-  "homepage": "https://adnankarim.github.io/portfolio",
+  "description": "Nust Cyber Security Club",
+  "homepage": "https://adnankarim.github.io/csc",
   "version": "1.0.0",
   "author": "adnan",
   "dependencies": {
