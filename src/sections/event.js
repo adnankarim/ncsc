@@ -1,9 +1,8 @@
-import React,{useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Timeline from './Timeline/Timeline';
 import Heading from '../components/UI/heading';
 import useDarkMode from 'use-dark-mode';
-import Button from '../components/UI/button';
 import {
   Contained,
   StyledSection,
@@ -44,7 +43,7 @@ const Event = (props) => {
               />
               ):
               (<>
-                <props.Element></props.Element>
+                <props.Element images={props.images}  ></props.Element>
                </> 
                 )}
           </PortfolioWrapper>

@@ -9,7 +9,11 @@ import Event from '../sections/event';
 import Contact from '../sections/contact';
 import Helmet from "react-helmet";
 import { withPrefix } from "gatsby";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {  Element,  animateScroll as scroll, scroller } from 'react-scroll'
+
+const EthhackingImages ='ethhacking';
+const CryptoshopImages ='cryptoshop';
+const HackAttackImages ='hackattack';
 
 function scrollTo(e) {
   scroller.scrollTo(`${e}`, {
@@ -47,7 +51,7 @@ return (
         handleChange={handleGalleryChange}
         mode='timeline'
         title='Events'
-        title
+        
       />
     </div>
     <div name='scrol' id='scrollbg'>
@@ -66,6 +70,7 @@ return (
           <GalleryWrapper
             title='ETHHACKING'
             subtitle='Few Glimpses of the Workshop'
+            images={EthhackingImages}
           />
         </>
       ) : displayGallery === "cryptoshop" ? (
@@ -83,6 +88,7 @@ return (
 
         <GalleryWrapper
           title='CRYPTOSHOP'
+         images={CryptoshopImages}
           subtitle='Few Glimpses of the Workshop'
         />
       </>
@@ -102,6 +108,7 @@ return (
 
           <GalleryWrapper
           title='HACK ATTACK'
+          images={HackAttackImages}
           subtitle='Few Glimpses of the Workshop'
         />
         </>

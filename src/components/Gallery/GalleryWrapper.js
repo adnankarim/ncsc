@@ -6,6 +6,7 @@ class GalleryWrapper extends Component {
     return (
      
       <Event
+        images={this.props.images}
         mode={this.props.mode}
         title={this.props.title}
         subtitle={this.props.subtitle}
