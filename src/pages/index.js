@@ -10,7 +10,7 @@ import Contact from '../sections/contact';
 import Helmet from "react-helmet";
 import { withPrefix } from "gatsby";
 import {  Element,  animateScroll as scroll, scroller } from 'react-scroll'
-
+import './index.css'
 const EthhackingImages ='ethhacking';
 const CryptoshopImages ='cryptoshop';
 const HackAttackImages ='hackattack';

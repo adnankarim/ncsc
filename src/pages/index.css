@@ -1,0 +1,28 @@
+.vertical-timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #127eb1;
+}
+.vertical-timeline-element-content {
+    position: relative;
+    margin-left: 60px;
+    border-radius: .25em;
+    padding: 1em;
+    background-color:var(--background);
+box-shadow: 0 0px 0 #ddd;
+}
+.vertical-timeline-element-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+    background: #FFCF96;
+    color: #1aa5d1;
+}

@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
+var height=0;
+var width =0;
 
 function getWindowDimensions() {
   
-  useEffect(() => {
+  
     // Update the document title using the browser API
-    const { innerWidth: width, innerHeight: height } = window;
-  });
-  var width =width;
-  var height= height;
+    width =window.innerWidth.width;
+    height= window.innerHeight.height;
+
+  
+   
   return {
     width,
     height
