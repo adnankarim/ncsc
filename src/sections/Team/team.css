@@ -19,9 +19,7 @@
     padding: 40px 0;
     transition: 0.4s;
   }
-  .pe:hover{
-    background: #ddd;
-  }
+  
   .pe img{
     
     width: 150px;
@@ -54,9 +52,7 @@
     padding: 0px ;
     transition: 0.4s;
   }
-  .peptalk:hover{
-    background: #ddd;
-  }
+  
   .peptalk img{
     
     width: 150px;

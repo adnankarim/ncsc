@@ -3,12 +3,11 @@ import ReactDOM from "react-dom";
 var height=0;
 var width =0;
 
-function getWindowDimensions() {
+function usegetWindowDimensions() {
   
   
     // Update the document title using the browser API
-    width =window.innerWidth.width;
-    height= window.innerHeight.height;
+    
 
   
    
@@ -20,12 +19,16 @@ function getWindowDimensions() {
 
 export default function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
+    usegetWindowDimensions()
   );
+  useEffect(()=>{
+    width =window.innerWidth.width;
+    height= window.innerHeight.height;
+  })
 
   useEffect(() => {
     function handleResize() {
-      setWindowDimensions(getWindowDimensions());
+      setWindowDimensions(usegetWindowDimensions());
     }
 
     window.addEventListener("resize", handleResize);

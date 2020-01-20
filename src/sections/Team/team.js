@@ -5,7 +5,26 @@ import   './team.css';
 
 
 export default class TeamPage extends Component  {
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
   
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
   render(){
   return (  <>{
       
@@ -17,10 +36,10 @@ export default class TeamPage extends Component  {
                                
                                   <>
                                  {
-                                 this.props.president===true?
+                                 this.props.president===true ?
                                  
                                  ( 
-                                  this.props.width>600?
+                                  this.state.width>600?
                                  (<div className="d-pe">
                                   <img src={this.props.imgUrl[0]} alt=""/>
                                   <div className="d-name">{this.props.name[0]}</div>
@@ -52,7 +71,7 @@ export default class TeamPage extends Component  {
                                                     this.props.president===true ?
                                                       (
                                                       
-                                                       this.props.width>600?
+                                                       this.state.width>600?
                                                     (  <div className="d-peptalk">
                                                       <img src={this.props.imgUrl[1]} alt=""/>
                                                       <div className="d-name">{this.props.name[1]}</div>
@@ -97,10 +116,10 @@ export default class TeamPage extends Component  {
 
 
                             {
-                                 this.props.president===true?
+                                 this.props.president===true ?
                                  
                                  ( 
-                                  this.props.width>600?
+                                  this.state.width>600?
                                  (<div className="pe">
                                   <img src={this.props.imgUrl[0]} alt=""/>
                                   <div className="p-name">{this.props.name[0]}</div>
@@ -129,10 +148,10 @@ export default class TeamPage extends Component  {
                                   {
 
 
-                                  this.props.president===true ?
+                                  this.props.president===true  ?
                                     (
                                     
-                                    this.props.width>600?
+                                    this.state.width>600?
                                   (  <div className="peptalk">
                                     <img src={this.props.imgUrl[1]} alt=""/>
                                     <div className="p-name">{this.props.name[1]}</div>

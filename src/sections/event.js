@@ -25,7 +25,6 @@ const Event = (props) => {
 
   return (
     <StyledSection id="events">
-      {console.log(props.displayGallery)}
       <Contained>
         <Wrapper>
           <Heading

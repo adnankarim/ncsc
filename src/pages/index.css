@@ -17,7 +17,7 @@ box-shadow: 0 0px 0 #ddd;
 }
 .vertical-timeline-element-icon {
     position: absolute;
-    top: 0;
+    top: 12px;
     left: 0;
     width: 40px;
     height: 40px;
@@ -25,4 +25,5 @@ box-shadow: 0 0px 0 #ddd;
     box-shadow: 0 0 0 4px, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
     background: #FFCF96;
     color: #1aa5d1;
+
 }
