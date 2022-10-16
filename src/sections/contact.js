@@ -64,7 +64,7 @@ const Contact = () => {
           ) : (
             <LogoImage fluid={darkLogo.childImageSharp.fluid} />
           )}
-          <CopyRight>Copyright © {new Date().getFullYear()}, Nust Cyber Security Club</CopyRight>
+          <CopyRight>Copyright © {new Date().getFullYear()}, Nust Cyber Security Club @ Developed by <a href="https://adnankarim.dev">Adnan Karim</a></CopyRight>
         </Wrapper>
       </Contained>
     </StyledSection>
